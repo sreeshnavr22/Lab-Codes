@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ <title>Student Resume</title>
+ <style>
+ body {
+ font-family: 'Arial', sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f0f2f5;
+ color: #333;
+ }
+ .container {
+ max-width: 900px;
+ margin: 30px auto;
+ background: #ffffff;
+ padding: 30px;
+ border-radius: 15px;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ }
+ .header {
+ text-align: center;
+ padding-bottom: 20px;
+border-bottom: 2px solid #ddd;
+ margin-bottom: 20px;
+ }
+ .header h1 {
+ font-size: 2.5em;
+ margin: 0;
+ color: #2e86de;
+ }
+ .header h2 {
+ font-size: 1.3em;
+ color: #555;
+ }
+ .section-title {
+ font-size: 1.5em;
+ color: #2e86de;
+ margin-bottom: 15px;
+ border-left: 4px solid #2e86de;
+ padding-left: 10px;
+ }
+ .section {
+ margin-bottom: 30px;
+ }
+ ul {
+ list-style: none;
+ padding: 0;
+}
+ ul li {
+ margin-bottom: 10px;
+ }
+ .highlight {
+ color: #e74c3c;
+ font-weight: bold;
+ }
+ .contact {
+ text-align: center;
+ font-size: 1.1em;
+ margin-bottom: 20px;
+ }
+ .contact span {
+ display: block;
+ margin: 5px 0;
+ }
+ .contact a {
+ color: #2e86de;
+ text-decoration: none;
+ }
+ .contact a:hover {
+ text-decoration: underline;
+ }
+.skills, .projects {
+ display: flex;
+ gap: 15px;
+ flex-wrap: wrap;
+ }
+ .skill-box, .project-box {
+ flex: 1;
+ min-width: 300px;
+ padding: 15px;
+ background: #f8f9fa;
+ border-radius: 10px;
+ border: 1px solid #ddd;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .footer {
+ text-align: center;
+ font-size: 0.9em;
+ margin-top: 20px;
+ color: #666;
+ }
+ /* Icons */
+ .icon {
+ font-size: 1.5em;
+ color: #2e86de;
+ margin-right: 10px;
+ }
+.icon-small {
+ font-size: 1.2em;
+ color: #555;
+ margin-right: 5px;
+ }
+ .icon:hover {
+ color: #e74c3c;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <!-- Header -->
+ <div class="header">
+ <h1>Sreeshnav T</h1>
+ <h2>First-Year B.Tech Student</h2>
+ <h3>Srinivas University, Mukka, Mangaluru</h3>
+ </div>
+ <!-- Contact Information -->
+ <div class="section">
+ <div class="section-title">Contact Information</div>
+ <div class="contact">
+ <span><i class="icon">&#9993;</i>Email: <a 
+href="sreeshnavrajeesh362@gmail.com">sreeshnavrajeesh362@gmail.com</a></span>
+ <span><i class="icon">&#9743;</i>Phone: <a href="tel:+918848571417">+91 
+8848571417</a></span>
+ <span><i class="icon">&#127968;</i>Address: Pookkandy House Eachur P.O Eachur,Kannur,Kerala,India 670591</span>
+</div>
+ </div>
+ <!-- Academic Background -->
+ <div class="section">
+ <div class="section-title">Academic Background</div>
+ <ul>
+ <li><i class="icon-small">&#128218;</i><strong>B.Tech in Computer 
+Science</strong> - Srinivas University (2024 - Present)</li>
+ <li><i class="icon-small">&#128218;</i><strong>Class 12:</strong> GHSS Irikkur (2022-2024)</li>
+ <li><i class="icon-small">&#128218;</i><strong>Class 10:</strong> KHSS Koodali (2021)</li>
+ </ul>
+ </div>
+ <!-- Skills -->
+ <div class="section">
+ <div class="section-title">Skills</div>
+ <div class="skills">
+ <div class="skill-box">
+ <i class="icon">&#128187;</i> <strong>Programming:</strong> C, Python
+ </div>
+ <div class="skill-box">
+ <i class="icon">&#127760;</i> <strong>Web Development:</strong> HTML, 
+CSS
+ </div>
+ <div class="skill-box">
+ <i class="icon">&#128101;</i> <strong>Soft Skills:</strong> Teamwork, 
+Communication
+ </div>
+</div>
+ </div>
+ <!-- Projects -->
+ <div class="section">
+ <div class="section-title">Projects</div>
+ <div class="projects">
+ <div class="project-box">
+ <i class="icon">&#127758;</i>
+ <strong>Personal Portfolio Website:</strong> Developed a basic website using 
+HTML and CSS to showcase academic achievements.
+ </div>
+ <div class="project-box">
+ <i class="icon">&#128421;</i>
+ <strong>Simple Calculator:</strong> Created a program in Python to perform 
+basic arithmetic operations.
+ </div>
+ </div>
+ </div>
+ <!-- Extracurricular Activities -->
+ <div class="section">
+ <div class="section-title">Extracurricular Activities</div>
+ <ul>
+ <li><i class="icon-small">&#127942;</i>Participated in <strong>College 
+Hackathon</strong> - 2024.</li>
+ <li><i class="icon-small">&#9878;</i>Volunteered at <strong>Clean Campus 
+Drive</strong> organized by Srinivas University.</li>
+ <li><i class="icon-small">&#128300;</i>Member of <strong>Robotics 
+Club</strong> at Srinivas University.</li>
+ </ul>
+</div>
+ <!-- Footer -->
+ <div class="footer">
+ <p>&copy; 2024 Rahul Kumar | Srinivas University</p>
+ </div>
+ </div>
+</body>
+</html>
