@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Today's Date</title>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+rel="stylesheet"> <!-- Google Fonts -->
+ <style>
+ body {
+ font-family: 'Poppins', sans-serif;
+ background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+ color: #ffffff;
+ text-align: center;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ }
+ h1 {
+ font-size: 2.5em;
+ margin-bottom: 20px;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+ }
+ #date-display {
+ font-size: 1.8em;
+ font-weight: 600;
+ background: rgba(0, 0, 0, 0.3);
+ padding: 10px 20px;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ footer {
+ margin-top: 30px;
+ font-size: 1em;
+ color: rgba(255, 255, 255, 0.8);
+ }
+ </style>
+<body>
+ <h1>Today's Date</h1>
+ <p id="date-display">Loading date...</p>
+ <footer>&copy; 2024 | My JavaScript Experiment</footer>
+ <script>
+ // Get today's date
+ const today = new Date();
+ // Format the date
+ const options = { year: 'numeric', month: 'long', day: 'numeric' };
+ const formattedDate = today.toLocaleDateString(undefined, options);
+ // Display the date in the paragraph
+ document.getElementById('date-display').textContent = `Today's Date: ${formattedDate}`;
+ </script>
+</body>
+</html>
