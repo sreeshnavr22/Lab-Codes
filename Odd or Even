@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Odd or Even Checker</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ text-align: center;
+ margin-top: 50px;
+ background-color: #f5f5f5;
+ }
+ h1 {
+ color: #333;
+ }
+ label, input, button {
+ font-size: 16px;
+ margin: 10px 0;
+ }
+ input {
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ width: 200px;
+}
+ button {
+ padding: 10px 20px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ button:hover {
+ background-color: #45a049;
+ }
+ #result {
+ margin-top: 20px;
+ font-size: 18px;
+ font-weight: bold;
+ color: #444;
+ }
+ </style>
+</head>
+<body>
+ <h1>Odd or Even Checker</h1>
+ <label for="number">Enter an integer:</label><br>
+ <input type="number" id="number" /><br>
+ <button onclick="checkOddEven()">Check</button>
+<p id="result"></p>
+ <script>
+ function checkOddEven() {
+ const number = parseInt(document.getElementById("number").value);
+ if (isNaN(number)) {
+ document.getElementById("result").innerText = "Please enter a valid number.";
+ document.getElementById("result").style.color = "red";
+ } else {
+ const result = number % 2 === 0 ? "Even" : "Odd";
+ document.getElementById("result").innerText = `The number ${number} is ${result}.`;
+ document.getElementById("result").style.color = result === "Even" ? "green" : "blue";
+ }
+ }
+ </script>
+</body>
+</html>
